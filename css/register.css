@@ -1,0 +1,174 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(#212223, #2e2e30, #1e1f29, #15161D);
+            min-height: 100vh; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 500px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(211, 211, 211, 0.395);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.336), 
+                        -3px -3px 10px rgba(0, 0, 0, 0.336), 
+                        6px 7px 10px rgba(0, 0, 0, 0.336);
+            backdrop-filter: blur(10px);
+        }
+        
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: white;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: white;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid rgba(211, 211, 211, 0.5);
+            border-radius: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus,
+        input[type="tel"]:focus {
+            outline: none;
+            border-color: rgba(211, 211, 211, 0.8);
+            background: rgba(255, 255, 255, 0.15);
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .checkbox-group input {
+            margin-right: 10px;
+        }
+        
+        .checkbox-group label {
+            margin-bottom: 0;
+            font-weight: normal;
+        }
+        
+        .terms {
+            color: lightblue;
+            text-decoration: none;
+        }
+        
+        .terms:hover {
+            text-decoration: underline;
+        }
+        
+        button {
+            width: 100%;
+            padding: 12px;
+            background: transparent;
+            border: 1px solid rgba(211, 211, 211, 0.429);
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+        
+        button:hover {
+            background: white;
+            color: black;
+        }
+        
+        .login-link {
+            text-align: center;
+            color: white;
+        }
+        
+        .login-link a {
+            color: lightblue;
+            text-decoration: none;
+        }
+        
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+        
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+            }
+            
+            input[type="text"],
+            input[type="email"],
+            input[type="password"],
+            input[type="tel"] {
+                padding: 10px 12px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h2 {
+                font-size: 22px;
+            }
+            
+            input[type="text"],
+            input[type="email"],
+            input[type="password"],
+            input[type="tel"] {
+                padding: 10px;
+                font-size: 15px;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h2 {
+                font-size: 20px;
+            }
+            
+            .form-group {
+                margin-bottom: 15px;
+            }
+        }

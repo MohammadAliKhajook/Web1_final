@@ -1,0 +1,618 @@
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           
+        }
+       @font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900; 
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+ header {
+    background-color: #1e1f29;
+    width: 100%;
+}
+
+header #top-header {
+    background-color: #1e1f29;
+    width: 100%;
+    padding: 10px 30px;
+    overflow: visible;
+    position: relative;
+    z-index: 100;
+}
+#Txt1{ font-family: 'Inter';
+  text-transform: capitalize;
+}
+header #top-header ul {
+    margin: 10px 0;
+}
+
+header #top-header ul li {
+    display: inline-block;
+    position: relative;
+}
+
+header #top-header ul.pull-left {
+    float: left;
+    list-style: none;
+}
+
+header #top-header ul.pull-right {
+    float: right;
+    list-style: none;
+}
+
+header #top-header ul li a {
+   font-family: 'Inter';
+    display: block;
+    text-decoration: none;
+    font-size: 12px;
+ 
+    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+}
+
+header #top-header ul li i {
+    color: #D10024;
+}
+
+.account-menu .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1e1f29;
+    min-width: 160px;
+    flex-direction: column;
+}
+
+.account-menu .submenu li {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.account-menu .submenu li a {
+   font-family: 'Inter';
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    color: white;
+    font-size: 12px;
+    text-align: left;
+    transition: background 0.3s ease;
+}
+
+.account-menu .submenu li a:hover {
+    background-color: #D10024;
+}
+
+.account-menu:hover .submenu {
+    display: flex;
+}
+
+header .main-header {
+    background-color: #15161D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #D10024;
+    padding: 15px 30px;
+    width: 100%;
+}
+
+header .main-header .logo img {
+    max-height: 60px;
+}
+
+#search-bar {
+    display: flex;
+    width: 50%;
+}
+
+#search-bar input {
+    height: 40px;
+    padding: 0 15px;
+    border: 1px solid #E4E7ED;
+    background-color: #FFF;
+    width: 100%;
+    font-size: 14px;
+     font-family: 'Inter';
+    border-radius: 40px 0 0 40px;
+    outline: none;
+}
+
+#search-bar button {
+    height: 40px;
+    width: 100px;
+    background-color: #D10024;
+    color: #FFF;
+    font-weight: 700;
+    border: none;
+    border-radius: 0 40px 40px 0;
+     font-family: 'Inter';
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#search-bar button:hover {
+    background-color: #a5001a;
+}
+
+#header-icons span {
+  font-family: 'Montserrat';
+    color: white;
+   
+}
+
+#header-icons i {
+    color: red;
+    margin: 10px;
+}
+
+
+.container {
+            width: 100%;
+        }
+div.newsletter {
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 10px;
+    border-bottom:1px solid #D10024 ;
+}
+header-links ul li:hover{
+      color: #D10024;
+}
+div.newsletter form {
+    margin-top: 15px;
+    padding: 10px 20px;
+    margin: 15px 0;
+}
+div.newsletter p {
+    font-size: 24px;
+     font-family: 'Inter';
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #5a5a5a88;
+    text-transform: capitalize;
+    
+}
+
+div.newsletter p span {
+    font-size: 24px;
+     font-family: 'Inter';
+    font-weight: 700;
+    color: #333;
+}
+
+div.newsletter form input[type="email"] {
+   font-family: 'Inter';
+    height: 40px;
+    padding: 0px 15px;
+    border: 1px solid #E4E7ED;
+    background-color: #FFF;
+    width: 30%;
+    border-radius: 40px 0px 0px 40px;
+    margin-right: -4px;
+}
+
+div.newsletter form input[type="email"]::placeholder {
+    margin: 0;
+    font: inherit;
+    color: #3333338b;
+}
+
+div.newsletter form button {
+    width: 160px;
+    height: 40px;
+    font-weight: 700;
+    background: #D10024;
+    color: #FFF;
+    border: none;
+    border-radius: 0px 40px 40px 0px;
+    text-transform: capitalize;
+}
+
+div.newsletter form button i {
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+}
+
+.newsletter ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.newsletter ul li i{
+    color:#2B2D42
+}
+.newsletter ul li i:hover{
+   color: #D10024;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 60px;
+  background-color: #15161D;
+  color: #5a5a5a;
+}
+
+.footer-col {
+  width: 22%;
+  text-align: left;
+}
+
+.footer-col h3 {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  color: #FFF;
+}
+
+.footer-col p {
+   font-family: 'Inter';
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #B9BABC;
+}
+
+.footer-col ul {
+  
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+   font-family: 'Inter';
+  font-size: 14px;
+  font-weight: 400;
+  color: #B9BABC;
+  text-transform: capitalize;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.footer-col ul li a:hover {
+  color: #D10024;
+  cursor: pointer;
+}
+body{
+    background-color: #33333302;
+}
+.section-title {
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    border-radius:5px ;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.234);
+}
+.section-title .title {
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0px;
+}
+  .checkbox-wrapper-46 input[type="checkbox"] {
+    display: none;
+    visibility: hidden;
+  }
+
+  .checkbox-wrapper-46 .cbx {
+    margin: auto;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+  }
+  .checkbox-wrapper-46 .cbx span {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translate3d(0, 0, 0);
+  }
+  .checkbox-wrapper-46 .cbx span:first-child {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    transform: scale(1);
+    vertical-align: middle;
+    border: 1px solid #9098A9;
+    transition: all 0.2s ease;
+  }
+  .checkbox-wrapper-46 .cbx span:first-child svg {
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 16px;
+    stroke-dashoffset: 16px;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+    transform: translate3d(0, 0, 0);
+  }
+  .checkbox-wrapper-46 .cbx span:first-child:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #506EEC;
+    display: block;
+    transform: scale(0);
+    opacity: 1;
+    border-radius: 50%;
+  }
+  .checkbox-wrapper-46 .cbx span:last-child {
+    padding-left: 8px;
+  }
+  .checkbox-wrapper-46 .cbx:hover span:first-child {
+    border-color: #506EEC;
+  }
+
+  .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child {
+    background: #506EEC;
+    border-color: #506EEC;
+    animation: wave-46 0.4s ease;
+  }
+  .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child svg {
+    stroke-dashoffset: 0;
+  }
+  .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child:before {
+    transform: scale(3.5);
+    opacity: 0;
+    transition: all 0.6s ease;
+  }
+
+  @keyframes wave-46 {
+    50% {
+      transform: scale(0.9);
+    }
+  }
+  div.checkout div.section-title{
+    padding: 10px;
+     border: 1px solid lightgray; width: 90%;
+margin: 30px auto;
+  }
+   div.checkout form{padding: 10px;}
+  div.checkout form input{
+    width: 40%;
+    padding: 10px;
+    display: block;
+    margin:10px 20px ;
+  } 
+
+  div.checkout form input[type="text"]
+  {
+     text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.783);
+    border: 1px solid lightgray;
+    border-radius: 10px; 
+    
+  }
+ div.checkout div.section-title div:nth-child(1) {
+   
+    padding: 10px;
+    margin-left:30px ;
+
+   letter-spacing: 2px;
+}
+div.customer-order{
+  position: absolute;
+  top: 2%;
+  left: 45%;
+ 
+  text-transform: capitalize;
+
+            width: 100%;
+            max-width: 600px;
+            background-color: white;
+            border-radius: 8px;
+           
+            padding: 25px;
+            border: 1px solid rgba(211, 211, 211, 0.646);
+        }
+        
+        #co-title {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        #co-title h2 {
+          font-family: 'Montserrat';
+            text-transform: uppercase;
+            font-size: 20px;
+            color: #333;
+            text-align: center;
+        }
+        
+        #co-title h2 span {
+            color: #e74c3c;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        
+        table tbody tr {
+            border-bottom: 1px solid #eee;
+        }
+        
+        table tbody tr:last-child {
+            border-bottom: none;
+        }
+        
+        table tbody tr td {
+           font-family: 'Inter';
+            padding: 15px 10px;
+            width: 50%;
+        }
+        
+        table tbody tr:first-child td {
+            font-weight: bold;
+          
+        }
+        
+        table tbody tr:nth-child(5) {
+            
+            border-left: 5px solid #9b59b6;
+        }
+        
+        table tbody tr:last-child td {
+            padding-top: 20px;
+            text-align: center;
+        }
+        
+        input[type="checkbox"] {
+          display: inline-block;
+            margin-right: 8px;
+        }
+        
+       
+        
+        table tr td a {
+            color: white;
+            
+            text-decoration: none;
+            text-align: center;
+            background-color:#D10024;
+            border-radius:20px ;
+          padding: 10px;
+          
+        }
+
+        
+      
+        
+      @media (min-width: 0) and (max-width: 768px) {
+    header #top-header {
+        padding: 10px 15px;
+    }
+    
+    header #top-header ul.pull-left,
+    header #top-header ul.pull-right {
+        float: none;
+    }
+    
+    header #top-header ul li a {
+        font-size: 10px;
+        padding: 8px 10px;
+    }
+    
+    header .main-header {
+        padding: 15px 15px;
+    }
+    
+    header .main-header .logo img {
+        max-height: 50px;
+    }
+    
+    #search-bar {
+        width: 100%;
+    }
+    
+    div.newsletter {
+        padding: 10px 10px;
+    }
+    
+    div.newsletter p {
+        font-size: 18px;
+    }
+    
+    div.newsletter p span {
+        font-size: 18px;
+    }
+    
+    div.newsletter form input[type="email"] {
+        width: 60%;
+    }
+    
+    div.newsletter form button {
+        width: 120px;
+    }
+    
+    .footer {
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-col {
+        width: 100%;
+    }
+    
+    div.checkout div.section-title {
+        width: 95%;
+        margin: 30px auto;
+    }
+    
+    div.checkout form input {
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    div.customer-order {
+        position: static;
+        width: 95%;
+        margin: 30px auto;
+        max-width: none;
+    }
+    
+    #co-title h2 {
+        font-size: 18px;
+    }
+    
+    table tbody tr td {
+        padding: 10px 5px;
+    }
+    
+    table tr td a {
+        padding: 8px;
+    }
+    
+    .account-menu .submenu {
+        min-width: 140px;
+    }
+    
+    .newsletter ul li {
+        margin: 5px;
+        padding: 8px;
+    }
+}

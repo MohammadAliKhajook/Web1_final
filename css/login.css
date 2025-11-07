@@ -1,0 +1,191 @@
+  body{
+             background: linear-gradient(#212223, #2e2e30, #1e1f29, #15161D);
+             height: 100vh;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+             font-family: 'Inter';
+        }
+        @font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900; 
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+        .container {
+        display: flex;
+       
+        align-items: center;
+        backdrop-filter: blur(10px) ;
+        height: 100vh;
+        position: relative;
+        }
+        form{
+            position: absolute;
+             font-family: 'Montserrat';
+           top: 20%;
+           left: 34%;
+           background: rgba(255, 255, 255, 0);
+           border:1px solid rgba(211, 211, 211, 0.395);
+           padding: 20px;
+           border-radius: 10px;
+           box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.336),-3px -3px 10px rgba(0, 0, 0, 0.336),6px 7px 10px rgba(0, 0, 0, 0.336);
+    
+        }
+        form label{
+            display: block;
+            margin-bottom: 8px;
+            text-transform: capitalize;
+            color: white;
+            
+            font-weight: 700;
+            letter-spacing: 1.5px;
+
+
+        }
+        
+        form input[type="password"], form input[type="text"]{
+            display: block;
+            height: 40px;
+            margin-bottom:30px ;
+             width: 350px;
+            border: 3px solid lightgray;
+            border-radius: 6px;
+           text-transform: capitalize;
+           color: rgba(112, 110, 110, 0.518);
+           background: rgba(255, 255, 255, 0.15);
+           padding: 10px;
+        }
+        span{
+            color: white;
+           
+
+        }
+        a{
+            /* text-decoration: none; */
+            text-align: center;
+            display: block;
+            margin-left: 270px;
+            margin-bottom: 30px;
+            color: white;
+            
+        }
+        button{
+            width: 100px;
+            padding: 10px;
+            margin-left: 140px;
+            background-color:transparent;
+            border: 1px solid rgba(211, 211, 211, 0.429);
+            border-radius:20px ;
+            color: white;
+            
+            font-weight: bold;
+            
+            display: block;
+        }
+         button:hover{
+            background: white;
+            color: black;
+         }
+            @media (max-width: 1200px) {
+            form {
+                left: 25%;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            form {
+                left: 20%;
+                top: 25%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            form {
+                left: 10%;
+                top: 20%;
+                width: 80%;
+                padding: 25px;
+            }
+            
+            form input[type="password"], form input[type="text"] {
+                width: 100%;
+            }
+            
+            a {
+                margin-left: 0;
+                text-align: right;
+            }
+            
+            button {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            form {
+                left: 5%;
+                top: 15%;
+                width: 90%;
+                padding: 20px;
+            }
+            
+            form input[type="password"], form input[type="text"] {
+                width: 100%;
+            }
+            
+            a {
+                margin-left: 0;
+                text-align: center;
+            }
+            
+            button {
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            form {
+                left: 2%;
+                top: 10%;
+                width: 96%;
+                padding: 15px;
+            }
+            
+            form input[type="password"], form input[type="text"] {
+                width: 100%;
+            }
+            
+            a {
+                margin-left: 0;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            
+            button {
+                width: 100%;
+            }
+        }
+         
